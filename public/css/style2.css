@@ -1,0 +1,128 @@
+* {font-family: Helvetica Neue, Arial, sans-serif; }
+
+body { background-image: linear-gradient(#fff 80%, #999);}
+
+h1, table { text-align: center; }
+
+table {border-collapse: collapse;  width: 70%; margin: 0 auto 5rem;}
+
+th, td { padding: 1.5rem; font-size: 1.3rem;
+text-align: center;}
+
+.Tabla_Horario th , .Tabla_Horario td{
+  font-size: 1.0rem;
+}
+
+tr:nth-child(odd) {
+	  background-color: #323C50;
+}
+
+/* Background-color of the even rows */
+tr:nth-child(even) {
+	  background-color: #2C3446;
+}
+
+tr, td { transition: .4s ease-in; }
+
+#firstrow{
+  background-color: #295173;
+}
+#firstrow_reporte{
+
+  background-color: #22A3C0;
+}
+
+#rows_reporte{
+	color:black;
+	font-size: 6em;
+	background-color: #B9EBF2;
+}
+
+#Reportes-contenedor{
+	background-color: #B5CED1;
+}
+
+.badge{
+	background-color: yellow;
+	color: black;
+}
+
+.dropdown-toggle:hover {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu{
+          color: black;
+          background-color: #1EB8AE;
+        }
+
+.dropdown-menu > li > a:hover {
+          color: black;
+          background-color: #0C2735;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.has-float-label {
+  display: block;
+  position: relative;
+}
+.has-float-label label, .has-float-label > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: text;
+  font-size: 100%;
+  color: #0A577A;
+  opacity: 1;
+  -webkit-transition: all .2s;
+          transition: all .2s;
+  top: -.5em;
+  left: 0.75rem;
+  z-index: 3;
+  line-height: 1;
+  padding: 0 10px;
+}
+.has-float-label label::after, .has-float-label > span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: white;
+  height: 2px;
+  top: 50%;
+  left: -.0em;
+  right: -.0em;
+  z-index: -1;
+}
+.has-float-label .form-control::-webkit-input-placeholder {
+  opacity: 1;
+  -webkit-transition: all .2s;
+          transition: all .2s;
+}
+.has-float-label .form-control:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+
+}
+.has-float-label .form-control:placeholder-shown:not(:focus) + * {
+  font-size: 0%;
+  opacity: .0;
+  top: .3em;
+}
+
+.input-group .has-float-label {
+  display: table-cell;
+}
+.input-group .has-float-label .form-control {
+  border-radius: 0.25rem;
+}
+.input-group .has-float-label:not(:last-child), .input-group .has-float-label:not(:last-child) .form-control {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-right: 0;
+}
+.input-group .has-float-label:not(:first-child), .input-group .has-float-label:not(:first-child) .form-control {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
